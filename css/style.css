@@ -1341,3 +1341,40 @@ section {
         height: 300px;
     }
 }
+
+/* ========== THEME TOGGLE MOBILE ========== */
+.theme-toggle-mobile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-sans);
+}
+
+.theme-toggle-mobile:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+.theme-toggle-mobile i {
+    font-size: 1.1rem;
+    width: 24px;
+    text-align: center;
+}
+
+/* Masquer sur desktop (déjà un bouton dans la navbar) */
+@media (min-width: 1024px) {
+    .theme-toggle-mobile {
+        display: none;
+    }
+}
